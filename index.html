@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+       <title>Baggregate</title>
+       <link rel='stylesheet' href='home.css'>
+    </head>
+    <body>
+        <!--heading for the site-->
+        <div class='heading'>
+            <h1 class='heading'>Baggregate</h1>
+            <h2 class='heading'>A Simple News Aggregator</h2>
+        </div>
+        
+        <!--contains buttons and a label-->
+        <div class='interface'>
+            <h3>Categories</h4>
+        
+            <!--Buttons for each news category-->
+            <button type='button' class='button' id='ent' onclick='buttonPress("entertainment", "ent")'>Entertainment</button>
+            <button type='button' class='button' id='sports' onclick='buttonPress("sports", "sports")'>Sports</button>
+            <button type='button' class='button' id='tech' onclick='buttonPress("technology", "tech")'>Technology</button>
+        </div><br>
+
+        <!--grid that will contain articles-->
+        <div id='grid' class='grid'>
+        </div>
+
+        <!--script containing function that makes HTTP requests to newsapi-->
+        <script src='main.js'></script>
+    </body>
+</html>
